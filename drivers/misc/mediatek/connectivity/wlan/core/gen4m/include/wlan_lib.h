@@ -218,7 +218,7 @@
 /* CONNECTIVITY.WIFI.BASIC.Crash.336013 2020/08/31 modify for memory out of bounds */
 //#define WLAN_CFG_FILE_BUF_SIZE	2048
 //#else
-#define WLAN_CFG_FILE_BUF_SIZE	4096
+#define WLAN_CFG_FILE_BUF_SIZE	8192
 //#endif
 
 #define WLAN_CFG_REC_ENTRY_NUM_MAX 400
