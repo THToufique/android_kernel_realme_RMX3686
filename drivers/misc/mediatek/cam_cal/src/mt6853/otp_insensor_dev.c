@@ -266,7 +266,7 @@ int hi846w_read_data(u16 addr, u8 *data)
 	return read_reg16_data8(0x0708, data);
 }
 
-void hi846w_otp_read_enable()
+void hi846w_otp_read_enable(void)
 {
 	write_reg16_data8(0x0A02, 0x01);
 	write_reg16_data8(0x0A00, 0x00);
@@ -280,7 +280,7 @@ void hi846w_otp_read_enable()
 	write_reg16_data8(0x0A00, 0x01);
 }
 
-void hi846w_otp_read_disable()
+void hi846w_otp_read_disable(void)
 {
 	write_reg16_data8(0x0a00, 0x00);
 	mdelay(10);
